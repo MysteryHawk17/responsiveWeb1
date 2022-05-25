@@ -1,0 +1,43 @@
+/* .container
+{
+display: grid;
+grid-gap: 1rem;
+grid-template-areas: 
+
+
+'navbar section aside';
+}
+.item
+{
+    background-color: yellow;
+    border: 3px solid black;
+} */
+
+@media only screen and (max-width:300px){
+    body{
+        background-color: red;
+    }
+    .container
+    {
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section section'
+         'aside aside aside asied';
+    }
+}
+@media only screen and (min-width:300px)and (max-width:500px){
+    body{
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width:500px)and (max-width:800px){
+    body{
+        background-color: orange;
+    }
+}
+@media only screen and (min-width:800px){
+    body{
+        background-color: blue;
+    }
+}
